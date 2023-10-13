@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body
+        {
+            background: rgba(32,33,36,255);
+        }
+        .ggl
+        {
+            font-size: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: white;  
+            
+        }
+        .ggldiv
+        {
+            position:absolute;
+            top: 20%;
+            left: 38%;
+        }
+        .srch
+        {
+            position: absolute;
+            top: 40%;
+            left: 28%;
+        }
+        .srchbar{
+            height: 40px;
+            width: 600px;
+            border-radius: 19px;
+            padding-left: 50px;
+            font-size: medium;
+            background-color: transparent;
+            border: 1px solid rgb(68, 71, 80);
+        }
+        .srchbar:hover
+        {
+            background-color: rgba(48,49,52,255);
+            border: none;
+            box-shadow: 0px 0px 3px black;
+            
+        }
+        .srchbar:focus
+        {   
+            color: white;
+            outline: none;
+        }
+        .srchbar:active
+        {   
+            color: white;
+            border: none;
+        }
+    
+        input:focus::placeholder
+        {
+            color: transparent;
+            
+        }
+        .gglpng
+        {
+            height: 100px;
+        }
+        .srchpng
+        {
+            height: 20px;
+            position: absolute;
+            top: 41.5%;
+            left: 29%;
+        }
+        .vsearch
+        {
+            height: 20px;
+            position: absolute;
+            top: 41.7%;
+            left: 66%;
+        }
+        .imagesrch
+        {
+            height: 20px;
+            position: absolute;
+            top: 41.7%;
+            left: 68%;
+        }
+        
+        .searchbt
+        {
+            height: 40px;
+            width: 140px;
+            font-size: 15px;
+            color: white;
+            background-color: rgba(48,49,52,255);
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 38%;
+            cursor: pointer;
+
+        }
+        .searchbt:hover
+        {
+            border: 1px solid rgba(255, 255, 255, 0.101);
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.101);
+        }
+        
+        .feeling
+        {
+            height: 40px;
+            width: 140px;
+            font-size: 15px;
+            color: white;
+            background-color: rgba(48,49,52,255);
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            cursor: pointer;
+
+        }
+        .feeling:hover
+        {
+            border: 1px solid rgba(255, 255, 255, 0.101);
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.101);
+        }
+        .langs
+        {
+            position: absolute;
+            top: 58%;
+            left: 30%;
+        }
+        .bottoms
+        {
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(28,28,29,255);
+            
+
+        }
+        .bot1
+        {
+            height: 49px;
+            width: 100%;
+            background-color: rgba(23,23,23,255);
+            display: flex;
+            justify-content: left ;
+            align-items: center;
+            color: rgb(183, 183, 183);
+            
+
+        }
+        .bot2
+        {
+            height: 49px;
+            width: 100%;
+            background-color: rgba(23,23,23,255);
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            justify-content: left ;
+            align-items: center;
+
+        }
+        .bot21
+        {
+            height: 49px;
+            width: 50%;
+            
+            background-color: transparent;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            display: flex;
+            justify-content: right ;
+            align-items: center;
+
+        }
+        .ind
+        {
+            margin-left: 30px;
+        }
+        .firstlist
+        {
+            color: rgb(183, 183, 183);
+                       
+        }
+        a
+        {
+            margin-left: 30px;
+            font-size: 15px; 
+            text-decoration: none;     
+        }
+        a:visited
+        {
+            color: rgb(183, 183, 183);
+        }
+        a:active
+        {
+            color: rgb(183, 183, 183);
+
+        }
+        a:hover
+        {
+            text-decoration: underline;
+        }
+
+        .a2
+        {
+            margin-right: 10px;
+            font-size: 15px; 
+            text-decoration: none;  
+            word-spacing: 10px;   
+        }
+        .a2:visited
+        {
+            color: rgb(183, 183, 183);
+        }
+        .a2:active
+        {
+            color: rgb(183, 183, 183);
+
+        }
+        .a2:hover
+        {
+            text-decoration: underline;
+        }
+
+        .topnav
+        {
+            width: 100%;
+            overflow: hidden;
+        }
+        .rightnav{
+            float: right;
+            padding-right: 100px;
+        }
+        .dots
+        {
+            height: 25px;
+            position: absolute;
+            right: 65px;
+            top: 6px;
+            border-radius: 100%;
+
+        }
+        .dots1
+        {
+            height: 25px;
+            position: absolute;
+            right: 20px;
+            top: 6px;
+            border-radius: 100%;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="ggldiv"> 
+        <span class="ggl"> <a href="https://www.google.com" target="_blank"> <img src="https://logodownload.org/wp-content/uploads/2014/09/google-logo-1.png" alt="google image" class="gglpng"> </a> </span>
+    </div>
+    <!-- end of google image -->
+
+    <div class="search">
+        <form class="srch">
+            <input type="text" name="searching" id="searching" class="srchbar" placeholder="Search Google or type a URL">
+        </form>
+
+    </div>
+    <div>
+        <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-18.png" alt="srchpng" class="srchpng">
+    </div>
+    <div class="vsrch">
+        <img src="https://freepngimg.com/thumb/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png" alt="voice" class="vsearch">
+    </div>
+    <div class="imgsrch">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Google_Lens_Icon.svg/800px-Google_Lens_Icon.svg.png" alt="image search" class="imagesrch">
+    </div>
+
+    <!-- end of search bar  -->
+
+    <div class="SearchButton">
+        <form class="btns">
+            <input type="button" class="searchbt" value="Google Search">
+            <input type="button" class="feeling" value="I'm Feeling Lucky">
+        </form>
+    </div>
+    <!-- Buttons End  -->
+
+    <div class="langs">
+        <span style="color: white;" >Google offered in:</span>
+        <span style="color: rgb(140, 192, 255); word-spacing: 2px; margin-left: 5px;"> हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ</span>
+    </div>
+    <!-- languages end -->
+
+    <div class="bottoms">
+        <div class="bot1">
+            <span class="ind">India</span>
+        </div>
+
+        <div class="bot2">
+            
+            <a href="#">About</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">How Search Works</a>
+                
+        </div>
+        <div class="bot21">
+            <a href="#" class="a2">Privacy</a>
+            <a href="#" class="a2">Terms</a>
+            <a href="#" class="a2">Setting</a>
+        </div>
+    </div>
+    <!-- bottom end -->
+
+    <div class="topnav">
+        <div class="rightnav">
+            <span class="nav1"> <a href="https://mail.google.com/mail/u/0/?ogbl#inbox"  style="color: white ;">Gmail</a> </span>
+            <span class="nav2"> <a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl"  style="color: white ;">Images</a> </span> 
+            <div class="dots9">
+                <a href="#">
+                    <img src="https://cdn-1.webcatalog.io/catalog/perplexity-ai/perplexity-ai-icon-filled-256.png?v=1675590609298" alt="9dots" class="dots">
+                </a>
+
+                <a href="#">
+                    <img src="https://w7.pngwing.com/pngs/646/489/png-transparent-wanda-maximoff-doctor-strange-art-minimalism-doctor-strange-comics-face-human.png" alt="Drstrange" class="dots1">
+                </a>
+
+            </div>
+        </div>  
+
+    </div>
+</body>
+</html>
